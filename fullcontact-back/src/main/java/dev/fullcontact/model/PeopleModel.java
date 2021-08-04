@@ -1,5 +1,7 @@
 package dev.fullcontact.model;
 
+import java.time.LocalDateTime;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
@@ -17,6 +19,27 @@ public class PeopleModel {
 
 	@NotNull(message = "Please enter url")
 	private String url = null;
+	
+	private boolean isSuccess;
+	private LocalDateTime created;
+	
+	
+
+	public boolean isSuccess() {
+		return isSuccess;
+	}
+
+	public void setSuccess(boolean isSuccess) {
+		this.isSuccess = isSuccess;
+	}
+
+	public LocalDateTime getCreated() {
+		return created;
+	}
+
+	public void setCreated(LocalDateTime created) {
+		this.created = created;
+	}
 
 	public String getEmail() {
 		return email;
@@ -50,12 +73,14 @@ public class PeopleModel {
 		this.url = url;
 	}
 
-	public PeopleModel(String email, String phone, String service, String url) {
+	public PeopleModel(String email, String phone, String service, String url,boolean isSuccess,LocalDateTime created) {
 		super();
 		this.email = email;
 		this.phone = phone;
 		this.service = service;
 		this.url = url;
+		this.isSuccess=isSuccess;
+		this.created=created;
 	}
 
 	public PeopleModel() {
