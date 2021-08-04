@@ -1,5 +1,8 @@
+const prefix = "http://localhost:7000";
+
 export const Url = {
-  people: "http://localhost:7000/people",
+  people: `${prefix}/people`,
+  history: `${prefix}/history/list`,
 };
 
 export const listOfEmails = [
