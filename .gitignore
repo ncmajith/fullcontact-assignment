@@ -1,0 +1,16 @@
+.idea
+.DS_Store
+*.iml
+build/
+.gradle/
+root.jar
+classes/
+*/out
+node_modules
+**/.classpath
+**/.project
+**/.settings
+**/.idea
+**/bin
+**/.iml
+**/node_modules
