@@ -21,29 +21,11 @@ after installing these libs proceed to the next step
 * Used BootStrap for responsiveness and designing.
 
 ## Starting server
-	navigate to 
-	``` 
-	fullcontact-back
-	```
-	open cmd here and execute  
-	``` 
-	mvn clean install
-	```
-	after success full build execute 
-	```
-	java -jar -jar target/fullcontact-back-0.0.1-SNAPSHOT.jar
-	```
-	
+	navigate to /fullcontact-back
+	open cmd here and execute> mvn clean install
+	after successfull build execute> java -jar -jar target/fullcontact-back-0.0.1-SNAPSHOT.jar
+
 ## Starting client
-    navigate to 
-	``` 
-	fullcontact-frnd
-	```
-	open cmd here and execute  
-	``` 
-	yarn install
-	```
-	after success full build execute 
-	```
-	yarn run start
-	```
+	navigate to /fullcontact-frnd
+	open cmd here and execute> yarn install
+	after success full build execute> yarn run start
